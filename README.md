@@ -23,4 +23,4 @@ Neste capítulo, focamos em:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/usuario/nome-do-repositorio.git
+   git clone https://github.com/genis67/bootcamp-devjr-modulo2
