@@ -1,110 +1,147 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-            body{
-                background-color: #f5f5f5;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                
-            }
+input {
+    width: 95%;
+    height: 22px;
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px;
+}
 
-            .container{
-                background-color: #e9e9e9;
-                margin: auto;
-                width: 600px;
-                box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                overflow: hidden;
-            }
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #009E9E;
+}
 
-            .header{
-                padding: 2.5rem;
-            }
+a {
+   color : #E9E9E9;
+   font-size: 0.8rem;
+}
 
-            .flex-container{
-                display: flex;
-                
-                justify-content: space-around;
-                
-            }
+button {
+    margin-top: 1.2rem;
 
-            .header-title{
-                color: #006f6f;
-                font-size: 2rem;
-                font-weight: 700;
-                margin-bottom: 1.25rem;
-            }
+    width: 100%;
+    padding: 0.9rem 2rem;
 
-            .header-subtitle{
-               
-                font-size: 1.2rem;
-                font-weight: 500;
-                margin-bottom: 0.93rem;
-            }
-            .col-1{
-                background-color: #006a6a;
-                width: 50%;
-                padding: 1.25rem;
-                color: #ffffff;
-            }
-            .col-2{
-                background-color: #009e9e;
-                width: 50%;
-                padding: 0.62rem 1.25rem;
-                color: #ffffff;
-            }
+    color: #006A6A;
+    background-color: #CCCCCC;
 
-            .subscription-title{
-                font-size: 1.25rem;
-                text-align: center;
-                margin-bottom: 1.25rem;
-            }
+    font-size: 1rem;
 
-            .price{
-                font-size: 1.62rem;
-                font-weight: 700;
-            }
+    border-radius: 4px;
+    border: none;
 
-            .month{
-                font-size: 0.93rem;
-                font-style: italic;
-                margin-left: 0.93rem;
-            }
+    cursor: pointer;
+}
 
-            .buton{
-                margin-top: 1.25rem;
-                width: 100%;
-                padding: 0.93rem 2rem;
-                color: #006a6a;
-                background-color: #cccccc;
-                font-size: 1rem;
-                border-radius: 4px;
-                border: none;
-                cursor: pointer;
-            }
+button:hover {
+    background-color: #E9E9E9;
+}
 
-            .buton:hover{
-                background-color: #e9e9e9;
-            }
-            
-            .image-group{
-                text-align: center;
-                
-            }
 
-            @media screen and (max-width: 620px) {
-                html {
-                    font-size: 14px;
-                }
+.container {
+    background-color: #E9E9E9;
+    margin: auto;
+    
+    width: 600px;
 
-                .flex-container{
-                    flex-direction: column;
-                }
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
 
-                .col-1, .col-2 {
-                    width: 100%;
-                    box-sizing: border-box;
-                }
+.header {
+    padding: 0.9rem;
+}
 
-                .container {
-                    width: 95%;
-                }
-            }
-        
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-title {
+    color: #006F6F;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.header-subtitle {
+    color: #009E9E;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+}
+
+.col-1 {
+    background-color: #006A6A;
+    width: 50%;
+    padding: 1.2rem;
+    color: #FFF;
+}
+
+.col-2 {
+    background-color: #009E9E;
+    width: 50%;
+    padding: 0.6rem 1.2rem;
+    color: #FFF;
+}
+
+.subscription-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.month {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-left: 0.9rem;
+}
+
+.image-group{
+    text-align: center;
+}
+
+.form-register {
+    background-color: #006A6A;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+@media screen and (max-width: 620px){
+    html {
+        font-size: 14px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .col-1, .col-2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    .header {
+        padding: 15px;
+    }
+}
